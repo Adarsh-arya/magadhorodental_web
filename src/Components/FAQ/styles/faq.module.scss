@@ -1,0 +1,37 @@
+.faq {
+    background-color: rgb(240, 240, 240);
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .imgsec {
+        z-index: 1;
+        position: relative;
+        img {
+            width: auto;
+            max-height: 500px;
+        }
+    }
+    .faqsection {
+        h1,
+        h2 {
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .imgsec {
+        display: none;
+    }
+    .faq {
+        grid-template-columns: auto;
+        .faqsection {
+            h1,
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}
