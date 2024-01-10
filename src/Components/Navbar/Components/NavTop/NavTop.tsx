@@ -10,8 +10,8 @@ const NavTop = () => {
         <>
             <div className={styles.navtop}>
                 <div className={styles.contact}>
-                    <div><PiPhoneFill /> <p>+ 91 9382156026</p></div>
-                    <div><MdMarkEmailUnread /><p> sourav0w@gmail.com</p></div>
+                    <div><PiPhoneFill /> <p>+ 91 9135086087</p></div>
+                    <div><MdMarkEmailUnread /><p> magadhorodentalclinic@gmail.com</p></div>
                 </div>
                 <div className={styles.socail}>
                     <FaFacebookF />
