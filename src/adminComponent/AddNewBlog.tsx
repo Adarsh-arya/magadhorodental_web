@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic';
 import MakeApiRequest from '@/helper/makeApiRequest';
 import { BlogPost, BlogType } from '@/lib/models/blogposts';
 import Swal from 'sweetalert2';
-import CKeditor from './Editor/Editor';
 
 const Toast = Swal.mixin({
     toast: true,
@@ -171,12 +170,11 @@ const AddNewBlog = () => {
             </div>
             <div className="inputgroup">
                 <label>Write Blog</label>
-                {/* <EditorComponent
+                <EditorComponent
                     placeholder="Write Here...."
                     value={blogData.content}
                     onChange={handleEditorChange}
-                /> */}
-                <CKeditor name='editor' editorLoaded={true} onChange={handleEditorChange} value={blogData.content} />
+                />
             </div>
             <button className="mybtn" onClick={handleSubmit} disabled={Loading}>
                 {Loading ? "Loading..." : "Add New Post"}
